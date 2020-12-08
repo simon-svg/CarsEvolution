@@ -1,0 +1,12 @@
+@media screen and (max-width: 1030px) {
+    .wrapper{
+        width: 90%;
+    }
+    .header__nav{
+        display: none;
+    }
+    .burger-menu{
+        display: flex;
+    }
+}
+  

@@ -1,0 +1,263 @@
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+:root{
+    --white: white;
+    --black: black;
+    --red: #B13C3C;
+}
+.wrapper{
+    width: 1020px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.title{
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 700;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 3px;
+    bottom: -20px;
+    background-color: var(--red);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.subtitle{
+    font-size: 40px;
+    margin-top: 30px;
+    color: var(--white);
+    letter-spacing: 3px;
+}
+.red{
+    color: var(--red);
+}
+.black{
+    color: var(--black);
+}
+
+/* 
+header 
+*/
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--black);
+    position: fixed;
+    z-index: 9999;
+}
+.header__cont{
+    width: 100%;
+    justify-content: space-between;    
+}
+.logo__link{
+    color: var(--white);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.logo__link:hover{
+    opacity: 0.8;
+}
+.logo__red{
+    font-weight: 700;
+}
+.header__item{
+    margin-left: 20px;
+}
+.header__item:first-child{
+    margin-left: 0;
+}
+.header__link{
+    color: var(--white);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.header__link:hover{
+    opacity: 0.8;
+}
+
+.burger-menu{
+    width: 25px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+.burger-menu__item{
+    width: 100%;
+    height: 3px;
+    background-color: var(--red);
+}
+.header-mobile__nav{
+    width: 100%;
+    background-color: var(--black);
+    padding: 30px 0;
+    margin-top: 60px;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+}
+.header-mobile__list{
+    flex-direction: column;
+}
+.header-mobile__item{
+    margin-top: 20px;
+}
+.header-mobile__item:first-child{
+    margin-top: 0;
+}
+
+/*
+home
+*/
+
+.img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.home{
+    background-image: url(../media/img/homeBg.jpg);
+}
+
+
+
+/* 
+BMW
+*/
+
+.bmw-1928__img{
+    background-image: url(../media/img/bmw/1928.jpg);
+}
+.bmw-1934__img{
+    background-image: url(../media/img/bmw/1934.jpg);
+}
+.bmw-1940__img{
+    background-image: url(../media/img/bmw/1940.jpg);
+}
+.bmw-1950__img{
+    background-image: url(../media/img/bmw/1950.jpg);
+}
+.bmw-1958__img{
+    background-image: url(../media/img/bmw/1958.jpg);
+}
+.bmw-1959__img{
+    background-image: url(../media/img/bmw/1959.jpg);
+}
+.bmw-1960__img{
+    background-image: url(../media/img/bmw/1960.jpg);
+}
+.bmw-1970__img{
+    background-image: url(../media/img/bmw/1970.jpg);
+}
+.bmw-1975__img{
+    background-image: url(../media/img/bmw/1975.jpg);
+}
+.bmw-1980__img{
+    background-image: url(../media/img/bmw/1980.jpeg);
+}
+.bmw-1990__img{
+    background-image: url(../media/img/bmw/1990.jpg);
+}
+.bmw-2000__img{
+    background-image: url(../media/img/bmw/2000.jpg);
+}
+.bmw-2005__img{
+    background-image: url(../media/img/bmw/2005.jpg);
+}
+.bmw-2010__img{
+    background-image: url(../media/img/bmw/2010.jpg);
+}
+.bmw-2015__img{
+    background-image: url(../media/img/bmw/2015.jpg);
+}
+.bmw-2019__img{
+    background-image: url(../media/img/bmw/2019.jpg);
+}
+.bmw-2020__img{
+    background-image: url(../media/img/bmw/2020.jpg);
+}
+.bmw-2021__img{
+    background-image: url(../media/img/bmw/2021.jpg);
+}
+
+
+/* 
+MERCEDES
+*/
+
+.mercedes-1930__img{
+    background-image: url(../media/img/mercedes/1930.jpeg);
+}
+.mercedes-1939__img{
+    background-image: url(../media/img/mercedes/1939.JPG);
+}
+.mercedes-1945__img{
+    background-image: url(../media/img/mercedes/1945.jpg);
+}
+.mercedes-1954__img{
+    background-image: url(../media/img/mercedes/1954.jpg);
+}
+.mercedes-1960__img{
+    background-image: url(../media/img/mercedes/1960.jpg);
+}
+.mercedes-1970__img{
+    background-image: url(../media/img/mercedes/1970.jpg);
+}
+.mercedes-1980__img{
+    background-image: url(../media/img/mercedes/1980.jpg);
+}
+.mercedes-1989__img{
+    background-image: url(../media/img/mercedes/1989.jpg);
+}
+.mercedes-1990__img{
+    background-image: url(../media/img/mercedes/1990.jpg);
+}
+.mercedes-1995__img{
+    background-image: url(../media/img/mercedes/1995.jpg);
+}
+.mercedes-2000__img{
+    background-image: url(../media/img/mercedes/2000.jpg);
+}
+.mercedes-2005__img{
+    background-image: url(../media/img/mercedes/2005.jpg);
+}
+.mercedes-2010__img{
+    background-image: url(../media/img/mercedes/2010.jpg);
+}
+.mercedes-2015__img{
+    background-image: url(../media/img/mercedes/2015.jpg);
+}
+.mercedes-2019__img{
+    background-image: url(../media/img/mercedes/2019.jpg);
+}
+.mercedes-2020__img{
+    background-image: url(../media/img/mercedes/2020.webp);
+}
+.mercedes-2021__img{
+    background-image: url(../media/img/mercedes/2021.jpg);
+}
