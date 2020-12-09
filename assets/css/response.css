@@ -9,4 +9,11 @@
         display: flex;
     }
 }
+
+@media screen and (min-width: 1980px) {
+    .app{
+        width: 1980px;
+        margin: 0 auto;
+    }
+}
   
