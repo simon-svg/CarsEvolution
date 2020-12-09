@@ -53,6 +53,64 @@ html{
     color: var(--black);
 }
 
+
+/* 
+preloader 
+*/
+
+body{
+    overflow: hidden;
+}
+.mobile-device{
+    display: none;
+}
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.preloader__item{
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: preloaderAnim 1s ease infinite;
+    -webkit-animation: preloaderAnim 1s ease infinite;
+}
+@keyframes preloaderAnim{
+    0%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+        -webkit-transform: scale(3);
+        -moz-transform: scale(3);
+        -ms-transform: scale(3);
+        -o-transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+
 /* 
 header 
 */
@@ -260,4 +318,45 @@ MERCEDES
 }
 .mercedes-2021__img{
     background-image: url(../media/img/mercedes/2021.jpg);
+}
+
+/* 
+PORSCHE
+*/
+
+.porsche-1930__img{
+    background-image: url(../media/img/porsche/1930.jpg);
+}
+.porsche-1940__img{
+    background-image: url(../media/img/porsche/1940.jpg);
+}
+.porsche-1950__img{
+    background-image: url(../media/img/porsche/1950.jpg);
+}
+.porsche-1960__img{
+    background-image: url(../media/img/porsche/1960.jpg);
+}
+.porsche-1970__img{
+    background-image: url(../media/img/porsche/1970.jpg);
+}
+.porsche-1980__img{
+    background-image: url(../media/img/porsche/1980.jpg);
+}
+.porsche-1990__img{
+    background-image: url(../media/img/porsche/1990.jpg);
+}
+.porsche-2000__img{
+    background-image: url(../media/img/porsche/2000.jpg);
+}
+.porsche-2010__img{
+    background-image: url(../media/img/porsche/2010.jpg);
+}
+.porsche-2015__img{
+    background-image: url(../media/img/porsche/2015.jpg);
+}
+.porsche-2019__img{
+    background-image: url(../media/img/porsche/2019.jpg);
+}
+.porsche-2020__img{
+    background-image: url(../media/img/porsche/2020.jpg);
 }
