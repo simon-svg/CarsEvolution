@@ -4,7 +4,9 @@ const body = document.querySelector("body")
 document.body.onload = () => {
     preloader.style.opacity = "0";
     setTimeout(() => {
-        body.style["overflow-y"] = "scroll";
+        if (document.title !== "Cars Evolution") {
+            body.style["overflow-y"] = "scroll";
+        }
         preloader.style.display = "none";
         preloader.remove()
     }, 500)

@@ -199,9 +199,13 @@ home
     background-attachment: fixed;
 }
 .home{
-    background-image: url(../media/img/homeBg.jpg);
+    width: 100%;
+    height: 100vh;
 }
-
+.home__img{
+    width: 100%;
+    display: block;
+}
 
 
 /* 
