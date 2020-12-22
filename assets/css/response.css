@@ -2,12 +2,6 @@
     .wrapper{
         width: 90%;
     }
-    .header__nav{
-        display: none;
-    }
-    .burger-menu{
-        display: flex;
-    }
 }
 
 @media screen and (min-width: 1980px) {

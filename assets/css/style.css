@@ -138,6 +138,31 @@ header
 .logo__red{
     font-weight: 700;
 }
+.header__btn{
+    width: 170px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+.header__btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
 .header__item{
     margin-left: 20px;
 }
@@ -152,7 +177,10 @@ header
 .header__link:hover{
     opacity: 0.8;
 }
-
+.burger-menu__cont{
+    width: 164px;
+    justify-content: flex-end;
+}
 .burger-menu{
     width: 25px;
     height: 20px;
@@ -160,7 +188,7 @@ header
     justify-content: space-between;
     cursor: pointer;
     outline: none;
-    display: none;
+    display: flex;
 }
 .burger-menu__item{
     width: 100%;
