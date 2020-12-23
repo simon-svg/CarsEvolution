@@ -1,15 +1,11 @@
 // preloader
 const preloader = document.querySelector(".preloader");
 const body = document.querySelector("body");
-const musicBmw = document.querySelector(".music-bmw");
 document.body.onload = () => {
     preloader.style.opacity = "0";
     setTimeout(() => {
         if (document.title !== "Cars Evolution") {
             body.style["overflow-y"] = "scroll";
-        }
-        if (document.title == "BMW") {
-            musicBmw.play();
         }
         preloader.style.display = "none";
         preloader.remove()
@@ -45,7 +41,8 @@ const burgerMenuItem2 = document.querySelectorAll(".burger-menu__item")[1];
 const burgerMenuItem3 = document.querySelectorAll(".burger-menu__item")[2];
 let burgerMenuBool = true;
 
-burgerMenu.addEventListener("click", () => {
+burgerMenu.addEventListener("click", (e) => {
+    e.stopPropagation();
     if (burgerMenuBool) {
         headerMobileNav.style.display = "flex";
         burgerMenuItem2.style.display = "none";
@@ -165,4 +162,21 @@ recognizer.onresult = function (event) {
 };
 headerBtn.addEventListener("click", () => {
     recognizer.start();
+})
+
+
+
+
+
+
+
+// document
+document.addEventListener("click", () => {
+    headerMobileNav.style.display = "none";
+    burgerMenu.style["justify-content"] = "space-between";
+    headerMobileNav.style.display = "none";
+    burgerMenuItem2.style.display = "flex";
+    burgerMenuItem1.style.transform = "none";
+    burgerMenuItem3.style.transform = "none";
+    burgerMenuBool = true;
 })
